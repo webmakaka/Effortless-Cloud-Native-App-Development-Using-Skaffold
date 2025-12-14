@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: "{{ include "reactive-web-app-helm.fullname" . }}-test-connection"
   labels:
-    { { - include "reactive-web-app-helm.labels" . | nindent 4 } }
+    {{- include "reactive-web-app-helm.labels" . | nindent 4 }}
   annotations:
     "helm.sh/hook": test
 spec:

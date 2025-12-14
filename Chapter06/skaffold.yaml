@@ -2,16 +2,16 @@ apiVersion: skaffold/v2beta20
 kind: Config
 metadata:
   name: reactive-web-app
-build:
-  artifacts:
-    - image: reactive-web-app
-      jib:
-        args:
-          - -DskipTests
-deploy:
-  kustomize:
-    paths:
-      - kustomization/base
+# build:
+#   artifacts:
+#     - image: reactive-web-app
+#       jib:
+#         args:
+#           - -DskipTests
+# deploy:
+#   kustomize:
+#     paths:
+#       - kustomization/base
 profiles:
   - name: userDefinedPortForward
     portForward:

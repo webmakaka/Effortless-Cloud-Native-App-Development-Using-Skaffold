@@ -66,10 +66,10 @@
                 <version>2.8.0</version>
                 <configuration>
                     <from>
-                        <image>openjdk:16-alpine</image>
+                        <image>openjdk:16-ea-alpine</image>
                     </from>
                     <to>
-                        <image>docker.io/hiashish/skaffold-introduction</image>
+                        <image>docker.io/webmakaka/skaffold-introduction</image>
                     </to>
                 </configuration>
             </plugin>
